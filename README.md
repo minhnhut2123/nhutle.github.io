@@ -28,6 +28,6 @@ II. WebUI Testing
 - Every step verify I add step to take evidence screenshot then save to target/cucumber-reports/evidence
 
 III. Report Log
-- Report html is generated automatically via maven command and save in target/cucumber-reports/advanced-reports-html/cucumber-html-reports with 2 files:
+- Report html is generated automatically via maven command and save in /src with 2 files:
 + report-feature_file-src-test-resources-features-api-feature.html
 + report-feature_file-src-test-resources-features-selenium-feature.html
