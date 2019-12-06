@@ -1,0 +1,97 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2019-12-06T20:01:56.105Z",
+        "line": 5,
+        "name": "user A send mail to user B successfully",
+        "description": "",
+        "id": "send-mail-from-user-a-to-user-b-using-gmail-api;user-a-send-mail-to-user-b-successfully",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 35115000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user Sender with \"skedulotestuser1@gmail.com\" send mail with attachment to user Receiver with \"skedulotestuser2@gmail.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"skedulotestuser1@gmail.com\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"skedulotestuser2@gmail.com\"",
+                  "offset": 94
+                }
+              ],
+              "location": "StepDefinitions.APITesting.user_Sender_with_creates_mail_to_send_to_user_Receiver_with(String,String) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 31864000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user \"skedulotestuser2@gmail.com\" receives mail from user \"skedulotestuser1@gmail.com\" successfully",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"skedulotestuser2@gmail.com\"",
+                  "offset": 5
+                },
+                {
+                  "val": "\"skedulotestuser1@gmail.com\"",
+                  "offset": 58
+                }
+              ],
+              "location": "StepDefinitions.APITesting.user_receives_mail_fro_user_successfully(String,String) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 11137000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "attachment is correct",
+            "match": {
+              "location": "StepDefinitions.APITesting.attachment_is_correct() in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@api"
+          },
+          {
+            "name": "@tc1"
+          }
+        ]
+      }
+    ],
+    "name": "Send mail from user A to user B using gmail API",
+    "description": "",
+    "id": "send-mail-from-user-a-to-user-b-using-gmail-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/api.feature",
+    "tags": [
+      {
+        "name": "@api",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

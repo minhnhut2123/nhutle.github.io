@@ -1,0 +1,3 @@
+StepDefinitions\RunCucumberTest.class
+StepDefinitions\SeleniumTesting.class
+StepDefinitions\APITesting.class

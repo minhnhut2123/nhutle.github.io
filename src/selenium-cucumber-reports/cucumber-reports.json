@@ -1,0 +1,419 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2019-12-06T20:07:27.853Z",
+        "line": 5,
+        "name": "Go to Amazon then select some items and proceed to checkout",
+        "description": "",
+        "id": "amazon-shopping;go-to-amazon-then-select-some-items-and-proceed-to-checkout",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 18699000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User goes to Amazon with url \"https://www.amazon.com.au/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.amazon.com.au/\"",
+                  "offset": 29
+                }
+              ],
+              "location": "StepDefinitions.SeleniumTesting.user_goes_to_Amazon_with_url(String) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2454000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Select \"Today\u0027s Deals\" menu",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Today\u0027s Deals\"",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefinitions.SeleniumTesting.select_menu(String) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1996000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Sorts the items by \"Discount - High to Low\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Discount - High to Low\"",
+                  "offset": 19
+                }
+              ],
+              "location": "StepDefinitions.SeleniumTesting.sorts_the_items_by(String) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1048000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Click on button \"View Deal\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"View Deal\"",
+                  "offset": 16
+                }
+              ],
+              "location": "StepDefinitions.SeleniumTesting.click_on_button(String) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2883000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Click on first deal item",
+            "match": {
+              "location": "StepDefinitions.SeleniumTesting.click_on_item_first_deal() in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 624000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Add 2 items into cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefinitions.SeleniumTesting.add_items_into_cart(int) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 932000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Verify 2 items added into cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefinitions.SeleniumTesting.verify_items_added_into_cart(int) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1721000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Go back to main page",
+            "match": {
+              "location": "StepDefinitions.SeleniumTesting.go_back_to_main_page() in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4523000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Search for \"AAA Batteries​\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AAA Batteries​\"",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefinitions.SeleniumTesting.search_for(String) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 593000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Sort the items by \"Featured\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Featured\"",
+                  "offset": 18
+                }
+              ],
+              "location": "StepDefinitions.SeleniumTesting.sort_the_items_by(String) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2131000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Click on the \"Best Seller\" product",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Best Seller\"",
+                  "offset": 13
+                }
+              ],
+              "location": "StepDefinitions.SeleniumTesting.click_on_the_first_product(String) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 824000000,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Add 5 items into the cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 4
+                }
+              ],
+              "location": "StepDefinitions.SeleniumTesting.add_items_into_the_cart(int) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1073000000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Verify 7 items added into cart",
+            "match": {
+              "arguments": [
+                {
+                  "val": "7",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefinitions.SeleniumTesting.verify_items_added_into_cart(int) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 993000000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Go to Cart",
+            "match": {
+              "location": "StepDefinitions.SeleniumTesting.go_to_Cart() in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 399000000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Verify the individual price of each item",
+            "match": {
+              "location": "StepDefinitions.SeleniumTesting.verify_the_individual_price_of_each_item() in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1485000000,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Verify the subtotal price of all item",
+            "match": {
+              "location": "StepDefinitions.SeleniumTesting.verify_the_subtotal_price_of_all_item() in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1589000000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Edit the first item quantity to 1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 32
+                }
+              ],
+              "location": "StepDefinitions.SeleniumTesting.edit_the_first_item_quantity_to(int) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1587000000,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Edit the second item quantity to 3",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 33
+                }
+              ],
+              "location": "StepDefinitions.SeleniumTesting.edit_the_second_item_quantity_to(int) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 404000000,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Verify the individual price of each item",
+            "match": {
+              "location": "StepDefinitions.SeleniumTesting.verify_the_individual_price_of_each_item() in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1458000000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Verify the subtotal price of all item",
+            "match": {
+              "location": "StepDefinitions.SeleniumTesting.verify_the_subtotal_price_of_all_item() in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1077000000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "delete the \"first\" item",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"first\"",
+                  "offset": 11
+                }
+              ],
+              "location": "StepDefinitions.SeleniumTesting.delete_the_item(String) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1492000000,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "Verify the subtotal price of all item",
+            "match": {
+              "location": "StepDefinitions.SeleniumTesting.verify_the_subtotal_price_of_all_item() in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 889000000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "Click Proceed to Checkout button",
+            "match": {
+              "location": "StepDefinitions.SeleniumTesting.click_Proceed_to_Checkout_button() in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 972000000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Verify \"Sign-In\" form displays",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Sign-In\"",
+                  "offset": 7
+                }
+              ],
+              "location": "StepDefinitions.SeleniumTesting.verify_form_displays(String) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@selenium"
+          },
+          {
+            "name": "@tc1"
+          }
+        ]
+      }
+    ],
+    "name": "Amazon shopping",
+    "description": "",
+    "id": "amazon-shopping",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/selenium.feature",
+    "tags": [
+      {
+        "name": "@selenium",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

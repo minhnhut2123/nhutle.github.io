@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>SkeduloTest</td>
+              <td>1</td>
+            <td>07 Dec 2019, 03:08</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Duration</th>
+            <th>Average</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">StepDefinitions.SeleniumTesting.add_items_into_cart(int) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="624000000">624ms</td>
+              <td class="duration" data-value="624000000">624ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitions.SeleniumTesting.add_items_into_the_cart(int) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="824000000">824ms</td>
+              <td class="duration" data-value="824000000">824ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitions.SeleniumTesting.click_Proceed_to_Checkout_button() in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="889000000">889ms</td>
+              <td class="duration" data-value="889000000">889ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitions.SeleniumTesting.click_on_button(String) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="1048000000">1s 048ms</td>
+              <td class="duration" data-value="1048000000">1s 048ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitions.SeleniumTesting.click_on_item_first_deal() in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="2883000000">2s 883ms</td>
+              <td class="duration" data-value="2883000000">2s 883ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitions.SeleniumTesting.click_on_the_first_product(String) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="2131000000">2s 131ms</td>
+              <td class="duration" data-value="2131000000">2s 131ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitions.SeleniumTesting.delete_the_item(String) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="1077000000">1s 077ms</td>
+              <td class="duration" data-value="1077000000">1s 077ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitions.SeleniumTesting.edit_the_first_item_quantity_to(int) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="1589000000">1s 589ms</td>
+              <td class="duration" data-value="1589000000">1s 589ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitions.SeleniumTesting.edit_the_second_item_quantity_to(int) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="1587000000">1s 587ms</td>
+              <td class="duration" data-value="1587000000">1s 587ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitions.SeleniumTesting.go_back_to_main_page() in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="1721000000">1s 721ms</td>
+              <td class="duration" data-value="1721000000">1s 721ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitions.SeleniumTesting.go_to_Cart() in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="993000000">993ms</td>
+              <td class="duration" data-value="993000000">993ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitions.SeleniumTesting.search_for(String) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="4523000000">4s 523ms</td>
+              <td class="duration" data-value="4523000000">4s 523ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitions.SeleniumTesting.select_menu(String) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="2454000000">2s 454ms</td>
+              <td class="duration" data-value="2454000000">2s 454ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitions.SeleniumTesting.sort_the_items_by(String) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="593000000">593ms</td>
+              <td class="duration" data-value="593000000">593ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitions.SeleniumTesting.sorts_the_items_by(String) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="1996000000">1s 996ms</td>
+              <td class="duration" data-value="1996000000">1s 996ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitions.SeleniumTesting.user_goes_to_Amazon_with_url(String) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="18699000000">18s 699ms</td>
+              <td class="duration" data-value="18699000000">18s 699ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitions.SeleniumTesting.verify_form_displays(String) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/</td>
+              <td>1</td>
+              <td class="duration" data-value="972000000">972ms</td>
+              <td class="duration" data-value="972000000">972ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitions.SeleniumTesting.verify_items_added_into_cart(int) in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/</td>
+              <td>2</td>
+              <td class="duration" data-value="2005000000">2s 005ms</td>
+              <td class="duration" data-value="1002500000">1s 002ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitions.SeleniumTesting.verify_the_individual_price_of_each_item() in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/</td>
+              <td>2</td>
+              <td class="duration" data-value="803000000">803ms</td>
+              <td class="duration" data-value="401500000">401ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">StepDefinitions.SeleniumTesting.verify_the_subtotal_price_of_all_item() in file:/D:/WORK/Skedulo/skedulo3.0.0/target/test-classes/</td>
+              <td>3</td>
+              <td class="duration" data-value="4435000000">4s 435ms</td>
+              <td class="duration" data-value="1478333333">1s 478ms</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>20</td>
+            <td>24</td>
+            <td class="duration">51s 846ms</td>
+            <td class="duration">2s 160ms</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
