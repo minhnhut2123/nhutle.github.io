@@ -9,7 +9,7 @@ I. API Testing
 1. Login user A on browser (skedulotestuser1@gmail.com/P@ssword1!)
 2. Login user B on browser (skedulotestuser2@gmail.com/P@ssword1!)
 
-Note: Currently I cannot find solution to get token and refresh_token automatically so we need some manual step when run the scenarios.
+Note: Currently I cannot find solution to get token and refresh_token automatically so we need some manual steps when run the scenarios.
 Scenarios check:
 - User B delete mailbox
 - User A send mail with attachment to User B
@@ -28,4 +28,6 @@ II. WebUI Testing
 - Every step verify I add step to take evidence screenshot then save to target/cucumber-reports/evidence
 
 III. Report Log
-- Report html is generated automatically via maven command and save in target/cucumber-reports/advanced-reports-html
+- Report html is generated automatically via maven command and save in target/cucumber-reports/advanced-reports-html/cucumber-html-reports with 2 files:
++ report-feature_file-src-test-resources-features-api-feature.html
++ report-feature_file-src-test-resources-features-selenium-feature.html
