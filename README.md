@@ -17,14 +17,14 @@ Scenarios check:
 - User B get attachment and check sum attachment
 
 3. Execute scenarios
-- Use maven command: mvn clean test verify -Dcucumber.options="src/test/resources/features/api.feature"
+- Use maven command: mvn test verify -Dcucumber.options="src/test/resources/features/api.feature"
 - 1st time, when scenarios start it request a popup to authenticate user login with User B to delete mail
 - 2nd time, popup shows to login User A to send email and attachment to user B
 - 3rd time, popup shows to login User B to get the latest comming mail
 - 4th timne, popup shows to login User B to get the attachment to verify expected attachment via checksum
 
 II. WebUI Testing
-- Use maven command: mvn clean test verify -Dcucumber.options="src/test/resources/features/selenium.feature"
+- Use maven command: mvn test verify -Dcucumber.options="src/test/resources/features/selenium.feature"
 - Every step verify I add step to take evidence screenshot then save to target/cucumber-reports/evidence
 
 III. Report Log
